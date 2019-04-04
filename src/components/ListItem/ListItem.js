@@ -2,7 +2,7 @@ import React from 'react'
 import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native'
 
 const ListItem = (props) => (
-  <TouchableOpacity onLongPress={props.onItemLongPressed} onPress={props.onItemPressed}>
+  <TouchableOpacity onPress={props.onItemPressed}>
     <View style={style.listItem}>
       <Image style={style.placeImage} source={props.placeImage} />
       <Text>{props.placeName}</Text>
